@@ -1,0 +1,24 @@
+<h1>Bienvenue !</h1>
+<p>Ceci est ma première variable : <%= @variable %>.</p>
+
+
+<h1>Bienvenue !</h1>
+<p>Ceci est ma première variable : <%= @variable %>.</p>
+
+<% if @variable == 42 %>
+  Super, la variable vaut 42 !
+<% else %>
+  Mince, la variable ne vaut pas 42 !
+<% end %>
+
+
+<h1>Bienvenue !</h1>
+<p>Ceci est ma première variable : <%= @variable %>.</p>
+
+<% @variable.times do |i| %>
+  <%= i %>
+<% end %>
+
+<p>Ceci est la correction de l'exercice d'OpenClassrooms.</p>
+<p>Cette vue est ici : app/views/pages/home.html.erb</p>
+<p><a href="/home1">Lien vers la 2e page</a></p>
